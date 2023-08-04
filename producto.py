@@ -20,6 +20,18 @@ class Productos:
     def actualizar_cantidad(self, cantidad_vendida):
         self.cantidad = self.cantidad - cantidad_vendida
     
+    def get_nombre(self):
+        return self.nombre 
+    
+    def get_marca(self):
+        return self.marca
+    
+    def get_info_completa(self):
+        return f"{self.nombre} {self.marca} {self.cantidad}"
+
+    def actualizar_nombre(self, nuevo_nombre):
+        return 
+    
 p = Productos("Teclado", "HP", 50, 300)
 l = Productos("Laptop", "HP", 200, 300)
 #print(p.info())
